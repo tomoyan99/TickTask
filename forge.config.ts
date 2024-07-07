@@ -25,12 +25,24 @@ const config: ForgeConfig = {
         config: rendererConfig,
         entryPoints: [
           {
-            html: './src/index.html',
-            js: './src/renderer.ts',
-            name: 'main_window',
-            preload: {
-              js: './src/preload.ts',
-            },
+            html: './src/components/home/home.html',
+            js: './src/components/home/home.ts',
+            name: 'home',
+          },
+          {
+            html: './src/components/calendar/calendar.html',
+            js: './src/components/calendar/calendar.ts',
+            name: 'calendar',
+          },
+          {
+            html: './src/components/timer/timer.html',
+            js: './src/components/timer/timer.ts',
+            name: 'timer',
+          },
+          {
+            html: './src/components/todo/todo.html',
+            js: './src/components/todo/todo.ts',
+            name: 'todo',
           },
         ],
       },
